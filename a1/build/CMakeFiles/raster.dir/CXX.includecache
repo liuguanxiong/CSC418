@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../include/demosaic.h
+../include/over.h
 vector
 -
 
-/Users/guanxiongliu/Desktop/CSC418/a1/src/demosaic.cpp
-demosaic.h
-/Users/guanxiongliu/Desktop/CSC418/a1/src/demosaic.h
+/Users/guanxiongliu/Desktop/CSC418/a1/src/over.cpp
+over.h
+/Users/guanxiongliu/Desktop/CSC418/a1/src/over.h
 
