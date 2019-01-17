@@ -9,25 +9,30 @@ void simulate_bayer_mosaic(
   bayer.resize(width*height);
   ////////////////////////////////////////////////////////////////////////////
   // Add your code here
-  std::vector<std::vector<char>> bayerPattern = {{'g', 'b'}, {'r', 'g'}};
-    
-    int write = 0;
-    for (int i=0; i<height; i++) {
-        int index1 = i % 2;
-        for (int j=0; j<width; j++) {
-            int index2 = j % 2;
-            // what is the bayer color for the pixel I'm currently working on?
-            char color = bayerPattern[index1][index2];
-            
-            // based on the bayer color, write corresponding color to the result
-            if (color == 'r') {
-                bayer[write++] = rgb[0+3*(j+width*i)];
-            } else if (color == 'g') {
-                bayer[write++] = rgb[1+3*(j+width*i)];
-            } else {
-                bayer[write++] = rgb[2+3*(j+width*i)];
-            }
-        }
-    }
+  int i = 0;
+  for (int x = 0; x < height; x++){
+      for (int y = 0; y < width; y++){
+          if (x%2 == 0){
+              if (y%2 == 0){
+                  bayer[i] = rgb[(x*width+y)*3+1]; //g 
+                  i++;
+              }
+              else{
+                  bayer[i] = rgb[(x*width+y)*3+2]; //b
+                  i++;
+              }
+          }
+          else{
+              if (y%2 == 0){
+                  bayer[i] = rgb[(x*width+y)*3]; //r
+                  i++;
+              }
+              else{
+                  bayer[i] = rgb[(x*width+y)*3+1]; //g
+                  i++;
+              }
+          }
+      }
+  }
   ////////////////////////////////////////////////////////////////////////////
 }

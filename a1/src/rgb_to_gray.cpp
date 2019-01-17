@@ -14,7 +14,7 @@ void rgb_to_gray(
       double r = (double)rgb[(i*width+j)*3];
       double g = (double)rgb[(i*width+j)*3+1];
       double b = (double)rgb[(i*width+j)*3+2];
-      gray[i*width+j] = (unsigned char)(0.2 * r + 0.7 * g + 0.1 * b);
+      gray[i*width+j] = (unsigned char)(0.2126 * r + 0.7152 * g + 0.0722 * b);
     }
   }
   ////////////////////////////////////////////////////////////////////////////
