@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/simulate_bayer_mosaic.h
+vector
+-
+
+/Users/guanxiongliu/Desktop/computer-graphics-raster-images/src/simulate_bayer_mosaic.cpp
+simulate_bayer_mosaic.h
+/Users/guanxiongliu/Desktop/computer-graphics-raster-images/src/simulate_bayer_mosaic.h
+
