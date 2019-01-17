@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++0x -isysroot /Applications/Xcode.app/Contents/Developer/Pla
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/guanxiongliu/Desktop/computer-graphics-raster-images/include -I/Users/guanxiongliu/Desktop/computer-graphics-raster-images/json -isystem /Users/guanxiongliu/Desktop/computer-graphics-raster-images/shared/json 
+CXX_INCLUDES = -I/Users/guanxiongliu/Desktop/CSC418/a1/include -I/Users/guanxiongliu/Desktop/CSC418/a1/json -isystem /Users/guanxiongliu/Desktop/CSC418/a1/shared/json 
 

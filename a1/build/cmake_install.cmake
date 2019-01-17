@@ -1,4 +1,4 @@
-# Install script for directory: /Users/guanxiongliu/Desktop/computer-graphics-raster-images
+# Install script for directory: /Users/guanxiongliu/Desktop/CSC418/a1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/guanxiongliu/Desktop/computer-graphics-raster-images/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/guanxiongliu/Desktop/CSC418/a1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../include/simulate_bayer_mosaic.h
+../include/demosaic.h
 vector
 -
 
-/Users/guanxiongliu/Desktop/computer-graphics-raster-images/src/simulate_bayer_mosaic.cpp
-simulate_bayer_mosaic.h
-/Users/guanxiongliu/Desktop/computer-graphics-raster-images/src/simulate_bayer_mosaic.h
+/Users/guanxiongliu/Desktop/CSC418/a1/src/demosaic.cpp
+demosaic.h
+/Users/guanxiongliu/Desktop/CSC418/a1/src/demosaic.h
 
