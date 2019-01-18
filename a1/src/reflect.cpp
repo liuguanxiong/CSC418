@@ -20,7 +20,7 @@ void reflect(
         }
       }
       else if (num_channels == 1){
-        reflected[(i*width*num_channels+j)] = input[(i+1)*width*num_channels-j]; //greyscale
+        reflected[(i*width*num_channels+j)] = input[(i+1)*width*num_channels-j-1]; //greyscale
       }
     }
   }

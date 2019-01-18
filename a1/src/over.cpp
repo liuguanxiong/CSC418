@@ -23,7 +23,7 @@ void over(
       double dst_b = (double)B[dst++];
       double dst_a = (double)B[dst++] / 255.0;
 
-      double a = 1.0 - (1.0 - src_a) * (1.0 - dst_a);
+      double a = src_a + dst_a * (1.0 - src_a);
       double r = ((src_a * src_r) + (1.0 - src_a) * dst_a * dst_r) / a;
       double g = ((src_a * src_g) + (1.0 - src_a) * dst_a * dst_g) / a;
       double b = ((src_a * src_b) + (1.0 - src_a) * dst_a * dst_b) / a;
