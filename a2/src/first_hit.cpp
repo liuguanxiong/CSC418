@@ -10,6 +10,12 @@ bool first_hit(
 {
   ////////////////////////////////////////////////////////////////////////////
   // Replace with your code here:
+  int min_index = -1;
+  double min_distance = std::numeric_limits<double>::infinity();
+
+  for (int i = 0; i < objects.size(); i++){
+    
+  }
   return false;
   ////////////////////////////////////////////////////////////////////////////
 }
