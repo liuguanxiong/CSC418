@@ -12,11 +12,28 @@ bool first_hit(
   // Replace with your code here:
   int min_index = -1;
   double min_distance = std::numeric_limits<double>::infinity();
+  Eigen::Vector3d min_n;
 
   for (int i = 0; i < objects.size(); i++){
-    
+    double distance;
+    Eigen::Vector3d normal;
+    if (objects[i]->intersect(ray, min_t, distance, normal)){
+      if (distance < min_distance):
+      min_index = i;
+      min_distance = distance;
+      min_n = normal;
+    }
   }
-  return false;
+
+  if (min_index != -1){
+    hit_id = min_index;
+    t = min_distance;
+    n = min_n;
+    return true;
+  }
+  else{
+    return false;
+  }
   ////////////////////////////////////////////////////////////////////////////
 }
 
