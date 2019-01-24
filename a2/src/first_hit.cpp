@@ -18,10 +18,11 @@ bool first_hit(
     double distance;
     Eigen::Vector3d normal;
     if (objects[i]->intersect(ray, min_t, distance, normal)){
-      if (distance < min_distance):
+      if (distance < min_distance){
       min_index = i;
       min_distance = distance;
       min_n = normal;
+      }
     }
   }
 

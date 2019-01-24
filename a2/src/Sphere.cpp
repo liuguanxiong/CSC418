@@ -1,5 +1,7 @@
 #include "Sphere.h"
 #include "Ray.h"
+#include <cmath>
+
 bool Sphere::intersect(
   const Ray & ray, const double min_t, double & t, Eigen::Vector3d & n) const
 {
@@ -9,7 +11,7 @@ bool Sphere::intersect(
   Eigen::Vector3d e = ray.origin;
   Eigen::Vector3d c = center;
 
-  double discriminant = square(d.dot(e - c)) - d.dot(d) * ((e - c).dot(e - c) - square(radius));
+  double discriminant = pow(d.dot(e - c), 2) - d.dot(d) * ((e - c).dot(e - c) - pow(radius, 2));
   if (discriminant == 0.0){
     double result = -d.dot(e-c)/d.dot(d);
     if (result >= min_t){
