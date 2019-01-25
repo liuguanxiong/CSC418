@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/guanxiong/Desktop/CSC418/a2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guanxiong/Desktop/CSC418/a2/build
+CMAKE_BINARY_DIR = /home/guanxiong/Desktop/CSC418/a2/build-release
 
 # Include any dependencies generated for this target.
 include CMakeFiles/raycasting.dir/depend.make
@@ -59,7 +59,7 @@ include CMakeFiles/raycasting.dir/flags.make
 
 CMakeFiles/raycasting.dir/src/Plane.cpp.o: CMakeFiles/raycasting.dir/flags.make
 CMakeFiles/raycasting.dir/src/Plane.cpp.o: ../src/Plane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raycasting.dir/src/Plane.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raycasting.dir/src/Plane.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raycasting.dir/src/Plane.cpp.o -c /home/guanxiong/Desktop/CSC418/a2/src/Plane.cpp
 
 CMakeFiles/raycasting.dir/src/Plane.cpp.i: cmake_force
@@ -83,7 +83,7 @@ CMakeFiles/raycasting.dir/src/Plane.cpp.o.provides.build: CMakeFiles/raycasting.
 
 CMakeFiles/raycasting.dir/src/Sphere.cpp.o: CMakeFiles/raycasting.dir/flags.make
 CMakeFiles/raycasting.dir/src/Sphere.cpp.o: ../src/Sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raycasting.dir/src/Sphere.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raycasting.dir/src/Sphere.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raycasting.dir/src/Sphere.cpp.o -c /home/guanxiong/Desktop/CSC418/a2/src/Sphere.cpp
 
 CMakeFiles/raycasting.dir/src/Sphere.cpp.i: cmake_force
@@ -107,7 +107,7 @@ CMakeFiles/raycasting.dir/src/Sphere.cpp.o.provides.build: CMakeFiles/raycasting
 
 CMakeFiles/raycasting.dir/src/Triangle.cpp.o: CMakeFiles/raycasting.dir/flags.make
 CMakeFiles/raycasting.dir/src/Triangle.cpp.o: ../src/Triangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/raycasting.dir/src/Triangle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/raycasting.dir/src/Triangle.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raycasting.dir/src/Triangle.cpp.o -c /home/guanxiong/Desktop/CSC418/a2/src/Triangle.cpp
 
 CMakeFiles/raycasting.dir/src/Triangle.cpp.i: cmake_force
@@ -131,7 +131,7 @@ CMakeFiles/raycasting.dir/src/Triangle.cpp.o.provides.build: CMakeFiles/raycasti
 
 CMakeFiles/raycasting.dir/src/TriangleSoup.cpp.o: CMakeFiles/raycasting.dir/flags.make
 CMakeFiles/raycasting.dir/src/TriangleSoup.cpp.o: ../src/TriangleSoup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/raycasting.dir/src/TriangleSoup.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/raycasting.dir/src/TriangleSoup.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raycasting.dir/src/TriangleSoup.cpp.o -c /home/guanxiong/Desktop/CSC418/a2/src/TriangleSoup.cpp
 
 CMakeFiles/raycasting.dir/src/TriangleSoup.cpp.i: cmake_force
@@ -155,7 +155,7 @@ CMakeFiles/raycasting.dir/src/TriangleSoup.cpp.o.provides.build: CMakeFiles/rayc
 
 CMakeFiles/raycasting.dir/src/first_hit.cpp.o: CMakeFiles/raycasting.dir/flags.make
 CMakeFiles/raycasting.dir/src/first_hit.cpp.o: ../src/first_hit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/raycasting.dir/src/first_hit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/raycasting.dir/src/first_hit.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raycasting.dir/src/first_hit.cpp.o -c /home/guanxiong/Desktop/CSC418/a2/src/first_hit.cpp
 
 CMakeFiles/raycasting.dir/src/first_hit.cpp.i: cmake_force
@@ -179,7 +179,7 @@ CMakeFiles/raycasting.dir/src/first_hit.cpp.o.provides.build: CMakeFiles/raycast
 
 CMakeFiles/raycasting.dir/src/viewing_ray.cpp.o: CMakeFiles/raycasting.dir/flags.make
 CMakeFiles/raycasting.dir/src/viewing_ray.cpp.o: ../src/viewing_ray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/raycasting.dir/src/viewing_ray.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/raycasting.dir/src/viewing_ray.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raycasting.dir/src/viewing_ray.cpp.o -c /home/guanxiong/Desktop/CSC418/a2/src/viewing_ray.cpp
 
 CMakeFiles/raycasting.dir/src/viewing_ray.cpp.i: cmake_force
@@ -203,7 +203,7 @@ CMakeFiles/raycasting.dir/src/viewing_ray.cpp.o.provides.build: CMakeFiles/rayca
 
 CMakeFiles/raycasting.dir/src/write_ppm.cpp.o: CMakeFiles/raycasting.dir/flags.make
 CMakeFiles/raycasting.dir/src/write_ppm.cpp.o: ../src/write_ppm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/raycasting.dir/src/write_ppm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/raycasting.dir/src/write_ppm.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raycasting.dir/src/write_ppm.cpp.o -c /home/guanxiong/Desktop/CSC418/a2/src/write_ppm.cpp
 
 CMakeFiles/raycasting.dir/src/write_ppm.cpp.i: cmake_force
@@ -227,7 +227,7 @@ CMakeFiles/raycasting.dir/src/write_ppm.cpp.o.provides.build: CMakeFiles/raycast
 
 CMakeFiles/raycasting.dir/main.cpp.o: CMakeFiles/raycasting.dir/flags.make
 CMakeFiles/raycasting.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/raycasting.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/raycasting.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raycasting.dir/main.cpp.o -c /home/guanxiong/Desktop/CSC418/a2/main.cpp
 
 CMakeFiles/raycasting.dir/main.cpp.i: cmake_force
@@ -273,7 +273,7 @@ raycasting: CMakeFiles/raycasting.dir/src/write_ppm.cpp.o
 raycasting: CMakeFiles/raycasting.dir/main.cpp.o
 raycasting: CMakeFiles/raycasting.dir/build.make
 raycasting: CMakeFiles/raycasting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable raycasting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable raycasting"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/raycasting.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -297,6 +297,6 @@ CMakeFiles/raycasting.dir/clean:
 .PHONY : CMakeFiles/raycasting.dir/clean
 
 CMakeFiles/raycasting.dir/depend:
-	cd /home/guanxiong/Desktop/CSC418/a2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guanxiong/Desktop/CSC418/a2 /home/guanxiong/Desktop/CSC418/a2 /home/guanxiong/Desktop/CSC418/a2/build /home/guanxiong/Desktop/CSC418/a2/build /home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/guanxiong/Desktop/CSC418/a2/build-release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guanxiong/Desktop/CSC418/a2 /home/guanxiong/Desktop/CSC418/a2 /home/guanxiong/Desktop/CSC418/a2/build-release /home/guanxiong/Desktop/CSC418/a2/build-release /home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles/raycasting.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/raycasting.dir/depend
 
