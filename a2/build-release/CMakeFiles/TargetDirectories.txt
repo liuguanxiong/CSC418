@@ -1,3 +1,0 @@
-/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles/rebuild_cache.dir
-/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles/raycasting.dir
-/home/guanxiong/Desktop/CSC418/a2/build-release/CMakeFiles/edit_cache.dir
