@@ -2,7 +2,6 @@
 // Hint:
 #include "first_hit.h"
 #include <iostream>
-#include <cmath>
 
 Eigen::Vector3d blinn_phong_shading(
   const Ray & ray,
@@ -13,6 +12,7 @@ Eigen::Vector3d blinn_phong_shading(
   const std::vector<std::shared_ptr<Light> > & lights)
 {
   ////////////////////////////////////////////////////////////////////////////
+  // Replace with your code here:
   Eigen::Vector3d rgb(0, 0, 0);
   rgb += (objects[hit_id]->material->ka.array()*Eigen::Vector3d(1.0, 1.0, 1.0).array()).matrix();
 
@@ -34,7 +34,6 @@ Eigen::Vector3d blinn_phong_shading(
       rgb += (objects[hit_id]->material->ks.array()*lights[i]->I.array()).matrix()*pow(fmax(0.0, n.dot(h)), objects[hit_id]->material->phong_exponent);
     }
   }
-  // Replace with your code here:
   return rgb;
   ////////////////////////////////////////////////////////////////////////////
 }
