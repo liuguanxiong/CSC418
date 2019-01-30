@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/guanxiong/Desktop/CSC418/a2/main.cpp" "/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/main.cpp.o"
-  "/home/guanxiong/Desktop/CSC418/a2/src/Plane.cpp" "/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/Plane.cpp.o"
-  "/home/guanxiong/Desktop/CSC418/a2/src/Sphere.cpp" "/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/Sphere.cpp.o"
-  "/home/guanxiong/Desktop/CSC418/a2/src/Triangle.cpp" "/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/Triangle.cpp.o"
-  "/home/guanxiong/Desktop/CSC418/a2/src/TriangleSoup.cpp" "/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/TriangleSoup.cpp.o"
-  "/home/guanxiong/Desktop/CSC418/a2/src/first_hit.cpp" "/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/first_hit.cpp.o"
-  "/home/guanxiong/Desktop/CSC418/a2/src/viewing_ray.cpp" "/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/viewing_ray.cpp.o"
-  "/home/guanxiong/Desktop/CSC418/a2/src/write_ppm.cpp" "/home/guanxiong/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/write_ppm.cpp.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a2/main.cpp" "/Users/guanxiongliu/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/main.cpp.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a2/src/Plane.cpp" "/Users/guanxiongliu/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/Plane.cpp.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a2/src/Sphere.cpp" "/Users/guanxiongliu/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/Sphere.cpp.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a2/src/Triangle.cpp" "/Users/guanxiongliu/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/Triangle.cpp.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a2/src/TriangleSoup.cpp" "/Users/guanxiongliu/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/TriangleSoup.cpp.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a2/src/first_hit.cpp" "/Users/guanxiongliu/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/first_hit.cpp.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a2/src/viewing_ray.cpp" "/Users/guanxiongliu/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/viewing_ray.cpp.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a2/src/write_ppm.cpp" "/Users/guanxiongliu/Desktop/CSC418/a2/build/CMakeFiles/raycasting.dir/src/write_ppm.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

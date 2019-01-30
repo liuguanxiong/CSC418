@@ -11,7 +11,41 @@ bool write_ppm(
   const int num_channels)
 {
   ////////////////////////////////////////////////////////////////////////////
-  // Replace with your code here:
-  return false;
+  // Replace with your code from computer-graphics-raster-images or email
+  // jacobson@cs.toronto.edu for correct code.
+  if (width == 0 || height == 0){
+    fprintf(stderr, "Cannot save an empty image\n");
+    return false;
+  }
+  
+  std::ofstream file;
+  try {
+    file.open(filename, std::ios::binary);
+    if (file.fail()){
+      throw("Cannot open file.");
+    }
+
+    if (num_channels == 3){
+      file << "P6" << "\n";
+      file << width << " " << height << "\n";
+      file << 255 << "\n";
+    }
+    else{
+      file << "P5" << "\n";
+      file << width << " " << height << "\n";
+      file << 255 << "\n";
+    }
+
+    for (int i = 0; i < width * height * num_channels; i++){
+      file << data[i];
+    }
+
+    return true;
+    
+  } catch (const char *err) {
+    fprintf(stderr, "%s\n", err);
+    file.close();
+    return false;
+  }
   ////////////////////////////////////////////////////////////////////////////
 }
