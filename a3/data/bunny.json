@@ -114,8 +114,8 @@
       "normal": [-1,0,0]
     },
     {
-      "material": "green metal",
       "type": "plane",
+      "material": "green metal",
       "point": [0,-1,0],
       "normal": [0,1,0]
     }
