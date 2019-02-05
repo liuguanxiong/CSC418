@@ -1,17 +1,113 @@
+
 {
   "camera": {
     "type": "perspective",
     "focal_length": 3,
-    "eye": [0,0,5],
+    "eye": [0,0,20],
     "up": [0,1,0],
     "look": [0,0,-1],
-    "height": 1,
-    "width": 1.7777777778
+    "height": 2,
+    "width": 3.55555556
   },
   "materials": [
+    {
+      "name": "Lambertian gray",
+      "ka": [0.2, 0.2, 0.2],
+      "kd": [0.8, 0.8, 0.8],
+      "ks": [0.1,0.1,0.1],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 20
+    },
+    {
+      "name": "red sphere",
+      "ka": [0.874509,0.0,0.141176],
+      "kd": [0.874509,0.0,0.141176],
+      "ks": [0.874509,0.0,0.141176],
+      "km": [0.874509,0.0,0.141176],
+      "phong_exponent": 2000
+    },
+    {
+      "name": "yellow sphere",
+      "ka": [0.956862,0.764705,0.0],
+      "kd": [0.956862,0.764705,0.0],
+      "ks": [0.956862,0.764705,0.0],
+      "km": [0.956862,0.764705,0.0],
+      "phong_exponent": 2000
+    },
+    {
+      "name": "blue sphere",
+      "ka": [0.0,0.521568,0.780392],
+      "kd": [0.0,0.521568,0.780392],
+      "ks": [0.0,0.521568,0.780392],
+      "km": [0.0,0.521568,0.780392],
+      "phong_exponent": 2000
+    },
+    {
+      "name": "green sphere",
+      "ka": [0.0,0.623529,0.239215],
+      "kd": [0.0,0.623529,0.239215],
+      "ks": [0.0,0.623529,0.239215],
+      "km": [0.0,0.623529,0.239215],
+      "phong_exponent": 2000
+    },
+    {
+      "name": "black sphere",
+      "ka": [0.0,0.0,0.0],
+      "kd": [0.0,0.0,0.0],
+      "ks": [0.0,0.0,0.0],
+      "km": [0.0,0.0,0.0],
+      "phong_exponent": 2000
+    }
   ],
   "lights":[
+    {
+      "type": "directional",
+      "direction": [0,-1.5,-2],
+      "color": [0.5,0.5,0.5]
+    },
+    {
+      "type": "directional",
+      "direction": [0,1.5,-2],
+      "color": [0.5,0.5,0.5]
+    }
   ],
+
   "objects": [
+    {
+      "type": "plane",
+      "material": "Lambertian gray",
+      "point": [0,0,-5],
+      "normal": [0,0,1]
+    },
+    {
+      "type": "sphere",
+      "material": "red sphere",
+      "radius": 1,
+      "center": [2,1,1]
+    },
+    {
+      "type": "sphere",
+      "material": "blue sphere",
+      "radius": 1,
+      "center": [-2,1,1]
+    },
+    {
+      "type": "sphere",
+      "material": "green sphere",
+      "radius": 1,
+      "center": [1,-0.7321,1]
+    },
+    {
+      "type": "sphere",
+      "material": "black sphere",
+      "radius": 1,
+      "center": [0,1,1]
+    },
+    {
+      "type": "sphere",
+      "material": "yellow sphere",
+      "radius": 1,
+      "center": [-1,-0.7321,1]
+    }
   ]
 }
