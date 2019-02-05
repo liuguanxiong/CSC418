@@ -2,6 +2,7 @@
 #include "first_hit.h"
 #include "blinn_phong_shading.h"
 #include "reflect.h"
+#include <iostream>
 
 bool raycolor(
   const Ray & ray, 
