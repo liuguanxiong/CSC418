@@ -6,6 +6,15 @@ void insert_box_into_box(
 {
   ////////////////////////////////////////////////////////////////////////////
   // Add your code here
+  //x
+  B.min_corner(0) = fmin(B.min_corner(0), A.min_corner(0));
+  B.max_corner(0) = fmax(B.max_corner(0), A.max_corner(0));
+  //y
+  B.min_corner(1) = fmin(B.min_corner(1), A.min_corner(1));
+  B.max_corner(1) = fmax(B.max_corner(1), A.max_corner(1));
+  //z
+  B.min_corner(2) = fmin(B.min_corner(2), A.min_corner(2));
+  B.max_corner(2) = fmax(B.max_corner(2), A.max_corner(2));
   ////////////////////////////////////////////////////////////////////////////
 }
 
