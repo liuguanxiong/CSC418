@@ -54,17 +54,16 @@ AABBTree::AABBTree(
     }
 
     if (left.size() != 0 && right.size() == 0){
-      this->left = std::make_shared<AABBTree>(left, a_depth+1);
-      this->right = NULL;
+      right.emplace_back(left.back());
+      left.pop_back();
     }
     else if (left.size() == 0 && right.size() != 0){
-      this->right = std::make_shared<AABBTree>(right, a_depth+1);
-      this->left = NULL;
+      left.emplace_back(right.back());
+      right.pop_back();
     }
-    else{
-      this->left = std::make_shared<AABBTree>(left, a_depth+1);
-      this->right = std::make_shared<AABBTree>(right, a_depth+1);
-    }
+    this->left = std::make_shared<AABBTree>(left, a_depth+1);
+    this->right = std::make_shared<AABBTree>(right, a_depth+1);
+    
   }
   ////////////////////////////////////////////////////////////////////////////
 }
