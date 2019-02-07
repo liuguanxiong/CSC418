@@ -78,10 +78,46 @@ bool AABBTree::ray_intersect(
 {
   ////////////////////////////////////////////////////////////////////////////
   // Replace with your code here:
-  if (ray_intersect_box(ray, this->box, min_t, max_t, t)){
-    
+  if (!ray_intersect_box(ray, this->box, min_t, max_t, t)){
+    return false;
   }
-  t = 0;
-  return false;
+  
+  double left_t, right_t;
+  std::shared_ptr<Object> left_children, right_children;
+
+  bool left_hit = (this->left != NULL) && this->left->ray_intersect(ray, min_t, max_t, left_t, left_children);
+  bool right_hit = (this->right != NULL) && this->right->ray_intersect(ray, min_t, max_t, right_t, right_children);
+
+  if (left_hit && !left_children){
+    left_children = this->left;
+  }
+  if (right_hit && !right_children){
+    right_children = this->right;
+  }
+
+  if (left_hit && right_hit){
+    if (left_t < right_t){
+      t = left_t;
+      descendant = left_children;
+    }
+    else{
+      t = right_t;
+      descendant = right_children;
+    }
+    return true;
+  }
+  else if (left_hit){
+    t = left_t;
+    descendant = left_children;
+    return true;
+  }
+  else if (right_hit){
+    t = right_t;
+    descendant = right_children;
+    return true;
+  }
+  else{
+    return false;
+  }
   ////////////////////////////////////////////////////////////////////////////
 }
