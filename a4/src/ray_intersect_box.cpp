@@ -13,6 +13,7 @@ bool ray_intersect_box(
   x = 1/ray.direction(0);
   y = 1/ray.direction(1);
   z = 1/ray.direction(2);
+  double txmin,txmax,tymin,tymax,tzmin,tzmax;
 
   if (x >= 0) {
     txmin = x*(box.min_corner(0)-ray.origin(0));

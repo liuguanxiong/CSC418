@@ -30,22 +30,21 @@ AABBTree::AABBTree(
       insert_box_into_box(objects[i]->box, this->box);
     }
 
-    //find longest axis
-    int max_i = 0;
-    double longest = this->box.max_corner(max_i) - this->box.min_corner(max_i);
+    int longest_axis = 0;
+    double longest = this->box.max_corner(longest_axis) - this->box.min_corner(longest_axis);
     for (int i = 1; i < 3; i++){
       double distance = this->box.max_corner(i) - this->box.min_corner(i);
       if (distance > longest){
         longest = distance;
-        max_i = i;
+        longest_axis = i;
       }
     }
-    double m = 0.5*(box.max_corner(max_i)+box.min_corner(max_i));
+    double m = 0.5*(box.max_corner(longest_axis)+box.min_corner(longest_axis));
 
     std::vector<std::shared_ptr<Object>> left;
     std::vector<std::shared_ptr<Object>> right;
     for (int i = 0; i < objects.size(); i++){
-      if (objects[i]->box.center()(max_i) < m){
+      if (objects[i]->box.center()(longest_axis) < m){
         left.emplace_back(objects[i]);
       }
       else{
@@ -80,7 +79,6 @@ bool AABBTree::ray_intersect(
   if (!ray_intersect_box(ray, this->box, min_t, max_t)){
     return false;
   }
-  
   double left_t, right_t;
   std::shared_ptr<Object> left_children, right_children;
 

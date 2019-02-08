@@ -4,24 +4,23 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/context.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/context.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/egl_context.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/glx_context.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/init.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/init.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/input.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/input.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/linux_joystick.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/monitor.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/osmesa_context.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/posix_thread.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/posix_time.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/vulkan.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/window.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/window.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/x11_init.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/x11_monitor.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/x11_window.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
-  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glfw/src/xkb_unicode.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/cocoa_init.m" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/cocoa_joystick.m" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/cocoa_monitor.m" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/cocoa_time.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/cocoa_window.m" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/context.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/egl_context.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/init.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/input.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/monitor.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/nsgl_context.m" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/osmesa_context.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/posix_thread.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/vulkan.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glfw/src/window.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glfw/src/CMakeFiles/glfw.dir/window.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "Clang")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C
