@@ -77,7 +77,7 @@ bool AABBTree::ray_intersect(
 {
   ////////////////////////////////////////////////////////////////////////////
   // Replace with your code here:
-  if (!ray_intersect_box(ray, this->box, min_t, max_t, t)){
+  if (!ray_intersect_box(ray, this->box, min_t, max_t)){
     return false;
   }
   
