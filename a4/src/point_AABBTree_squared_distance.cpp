@@ -19,22 +19,22 @@ bool point_AABBTree_squared_distance(
   q.emplace(point_box_squared_distance(query, root->box), root);
   while (!q.empty()){
     double distance = q.top().first;
-    std::shared_ptr<AABBTree> n = q.top().second;
+    std::shared_ptr<Object> n = q.top().second;
     q.pop();
     if (distance < minimum){
-      std::shared_ptr<Object> new_n = std::dynamic_pointer_cast<Object>(n);
+      std::shared_ptr<AABBTree> new_n = std::dynamic_pointer_cast<AABBTree>(n);
       double cur_distance;
-      if (new_n && new_n->point_squared_distance(query, min_sqrd, max_sqrd, cur_distance, cur_descendant)){
+      if (!new_n && n->point_squared_distance(query, min_sqrd, max_sqrd, cur_distance, cur_descendant)){
         if (cur_distance < minimum){
           minimum = cur_distance;
           cur_descendant = new_n;
         }
       }
       else{
-        double d_l = point_box_squared_distance(query, n->left->box);
-        q.emplace(d_l, n->left);
-        double d_r = point_box_squared_distance(query, n->right->box);
-        q.emplace(d_r, n->right);
+        double d_l = point_box_squared_distance(query, new_n->left->box);
+        q.emplace(d_l, new_n->left);
+        double d_r = point_box_squared_distance(query, new_n->right->box);
+        q.emplace(d_r, new_n->right);
       }
     }
   }
