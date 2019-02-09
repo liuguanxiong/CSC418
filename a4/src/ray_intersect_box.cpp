@@ -44,16 +44,9 @@ bool ray_intersect_box(
 
   double largest_min = fmax(fmax(txmin, tymin), tzmin);
   double smallest_max = fmin(fmin(txmax, tymax), tzmax);
-  if (smallest_max < largest_min){
+  if (smallest_max < largest_min || fmin(max_t, smallest_max) < fmax(min_t, largest_min)){
     return false;
   }
-
-  double overlap_min = fmax(min_t, largest_min);
-  double overlap_max = fmin(max_t, smallest_max);
-  if (overlap_max < overlap_min){
-    return false;
-  }
-
   return true;
   ////////////////////////////////////////////////////////////////////////////
 }

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/guanxiongliu/Desktop/CSC418/a4/libigl/external/glad/src/glad.c" "/Users/guanxiongliu/Desktop/CSC418/a4/build_release/glad/CMakeFiles/glad.dir/src/glad.c.o"
+  "/home/guanxiong/Desktop/CSC418/a4/libigl/external/glad/src/glad.c" "/home/guanxiong/Desktop/CSC418/a4/build_release/glad/CMakeFiles/glad.dir/src/glad.c.o"
   )
-set(CMAKE_C_COMPILER_ID "Clang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
