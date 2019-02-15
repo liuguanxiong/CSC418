@@ -14,28 +14,44 @@ void sphere(
   ////////////////////////////////////////////////////////////////////////////
   // Add your code here:
   int total_faces = num_faces_u * num_faces_v;
-  V.resize(total_faces, 3);
+  int total_vertices = (num_faces_u + 1) * (num_faces_v + 1);
+  V.resize(total_vertices, 3);
   F.resize(total_faces, 4);
-  UV.resize(total_faces, 2);
+  UV.resize(total_vertices, 2);
   UF.resize(total_faces, 4);
-  NV.resize(total_faces, 3);
+  NV.resize(total_vertices, 3);
   NF.resize(total_faces, 4);
 
   int count = 0;
-  for (int i = 0; i < num_faces_u; i++){
-    for (int j = 0; j < num_faces_v; j++){
+  int i, j;
+  for (i = 0; i < num_faces_u; i++){
+    for (j = 0; j < num_faces_v; j++){
+
+      int ver1 = i * (num_faces_v + 1) + j;
+      int ver2 = (i+1) * (num_faces_v + 1) + j;
+      int ver3 = ver2 + 1;
+      int ver4 = ver1 + 1;
+
+      F.row(count) = Eigen::RowVector4i(ver1, ver2, ver3, ver4);
+      UF.row(count) = Eigen::RowVector4i(ver1, ver2, ver3, ver4);
+      NF.row(count) = Eigen::RowVector4i(ver1, ver2, ver3, ver4);
+      count++;
+    }
+  }
+
+  count = 0;
+  for (i = 0; i < num_faces_u + 1; i++){
+    for (j = 0; j < num_faces_v + 1; j++){
 
       double x, y, z, phi, theta;
-      phi = i / num_faces_u * M_PI;
-      theta = j / num_faces_v * 2 * M_PI;
-      x = sin(phi) * cos(theta);
-      y = sin(phi) * sin(theta);
-      z = cos(phi);
-
-      int ver1 = i * (num_faces_v)
+      theta = static_cast<double>(i) / num_faces_u * 2.0 * M_PI;
+      phi = static_cast<double>(j) / num_faces_v * M_PI;
+      x = -sin(phi) * cos(theta);
+      y = -sin(phi) * sin(theta);
+      z = -cos(phi);
 
       V.row(count) = Eigen::RowVector3d(x, y, z);
-      UV.row(count) = Eigen::RowVector3d(i / num_faces_u, j / num_faces_v);
+      UV.row(count) = Eigen::RowVector2d(i / num_faces_u, j / num_faces_v);
       NV.row(count) = Eigen::RowVector3d(x, y, z);
       count++;
     }
