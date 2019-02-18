@@ -51,7 +51,7 @@ void sphere(
       z = -cos(phi);
 
       V.row(count) = Eigen::RowVector3d(x, y, z);
-      UV.row(count) = Eigen::RowVector2d(i / num_faces_u, j / num_faces_v);
+      UV.row(count) = Eigen::RowVector2d(static_cast<double>(i) / num_faces_u, static_cast<double>(j) / num_faces_v);
       NV.row(count) = Eigen::RowVector3d(x, y, z);
       count++;
     }
