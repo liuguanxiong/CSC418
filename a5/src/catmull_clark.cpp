@@ -5,21 +5,6 @@
 #include <list>
 #include <string>
 
-template<typename T>
-struct matrix_hash : std::unary_function<T, size_t> {
-  std::size_t operator()(T const& matrix) const {
-    // Note that it is oblivious to the storage order of Eigen matrix (column- or
-    // row-major). It will give you the same hash value for two different matrices if they
-    // are the transpose of each other in different storage order.
-    size_t seed = 0;
-    for (size_t i = 0; i < matrix.size(); ++i) {
-      auto elem = *(matrix.data() + i);
-      seed ^= std::hash<typename T::Scalar>()(elem) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
-    }
-    return seed;
-  }
-};
-
 void catmull_clark(
   const Eigen::MatrixXd & V,
   const Eigen::MatrixXi & F,
@@ -41,18 +26,98 @@ void catmull_clark(
     }
     face_point[i] = accumulator / 4.0;
   }
-  
-  std::unordered_map<std::string, std::list<int>> edgepoint_idx_to_face;
+
+  std::unordered_map<int, std::list<int>> point_to_adj_faces;
   for (int i = 0; i < F.rows(); i++){
     for (int j = 0; j < F.cols(); j++){
-      std::string k;
+      point_to_adj_faces[F(i, j)].emplace_back(i);
+    }
+  }
+  
+  std::unordered_map<std::string, std::list<int>> edge_to_adj_faces;
+  for (int i = 0; i < F.rows(); i++){
+    for (int j = 0; j < F.cols(); j++){
+      std::string key;
       if (F(i, j) < F(i, (j + 1) % F.cols())){
-        k = std::to_string(F(i, j)) + "-" + std::to_string(F(i, (j + 1) % F.cols()));
+        key = std::to_string(F(i, j)) + "-" + std::to_string(F(i, (j + 1) % F.cols()));
       }
       else{
-        k = std::to_string(F(i, (j + 1) % F.cols())) + "-" + std::to_string(F(i, j));
+        key = std::to_string(F(i, (j + 1) % F.cols())) + "-" + std::to_string(F(i, j));
       }
-      edgepoint_idx_to_face[k].emplace_back(i);
+      edge_to_adj_faces[key].emplace_back(i);
+    }
+  }
+
+  std::unordered_map<int, std::list<std::string>> point_to_edges;
+  std::unordered_map<int, std::list<int>> point_to_neighbors;
+  for (int i = 0; i < F.rows(); i++){
+    for (int j = 0; j < F.cols(); j++){
+      std::string value;
+      value = std::to_string(F(i, j)) + "-" + std::to_string(F(i, (j + 1) % F.cols()));
+      point_to_edges[F(i, j)].emplace_back(value);
+      point_to_neighbors[F(i, j)].emplace_back(F(i, (j + 1) % F.cols()));
+    }
+  }
+
+  std::unordered_map<std::string, Eigen::RowVector3d> edge_point;
+  for (int i = 0; i < F.rows(); i++){
+    for (int j = 0; j < F.cols(); j++){
+      std::string key;
+      if (F(i, j) < F(i, (j + 1) % F.cols())){
+        key = std::to_string(F(i, j)) + "-" + std::to_string(F(i, (j + 1) % F.cols()));
+      }
+      else{
+        key = std::to_string(F(i, (j + 1) % F.cols())) + "-" + std::to_string(F(i, j));
+      }
+      Eigen::RowVector3d edgepoint(0, 0, 0);
+      for (int k: edge_to_adj_faces[key]){
+        edgepoint += face_point[k];
+      }
+      edgepoint += V.row(F(i, (j + 1) % F.cols()));
+      edgepoint += V.row(F(i, j));
+      edgepoint /= 4.0;
+
+      std::string key1, key2;
+      key1 = std::to_string(F(i, j)) + "-" + std::to_string(F(i, (j + 1) % F.cols()));
+      key2 = std::to_string(F(i, (j + 1) % F.cols())) + "-" + std::to_string(F(i, j));
+
+      edge_point[key1] = edgepoint;
+      edge_point[key2] = edgepoint;
+    }
+  }
+
+
+
+  for (int i = 0; i < F.rows(); i++){
+    for (int j = 0; j < F.cols(); j++){
+
+      //vertex 1
+      Eigen::RowVector3d ver1;
+      Eigen::RowVector3d old = V.row(F(i, j));
+      Eigen::RowVector3d avg_F(0, 0, 0);
+      for (int k: point_to_adj_faces[F(i, j)]){
+        avg_F += face_point[k];
+      }
+      avg_F /= (double)point_to_adj_faces[F(i, j)].size();
+
+      Eigen::RowVector3d avg_edge(0, 0, 0);
+      for (int neighbor_idx: point_to_neighbors[F(i, j)]){
+        avg_edge += (V.row(F(i, j)) + V.row(neighbor_idx))/2.0;
+      }
+      avg_edge /= (double)point_to_neighbors[F(i, j)].size();
+
+      n = (double)point_to_adj_faces[F(i, j)].size()
+      ver1 = (avg_F + 2 * avg_edge + (n - 3) * old) / n
+
+      //vertex 2
+      Eigen::RowVector3d ver2;
+      std::string key;
+      key = std::to_string(F(i, j)) + "-" + std::to_string(F(i, (j + 1) % F.cols()));
+      ver2 = edge_point[key];
+
+      //vertex 3
+
+
     }
   }
 
