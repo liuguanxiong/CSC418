@@ -116,7 +116,14 @@ void catmull_clark(
       ver2 = edge_point[key];
 
       //vertex 3
+      Eigen::RowVector3d ver3;
+      ver3 = face_point[i];
 
+      //vertex 4
+      Eigen::RowVector3d ver4;
+      std::string key;
+      key = std::to_string(F(i, (j + 3) % F.cols())) + "-" + std::to_string(F(i, j));
+      ver4 = edge_point[key];
 
     }
   }
