@@ -107,7 +107,7 @@ void catmull_clark(
       avg_edge /= (double)point_to_neighbors[F(i, j)].size();
 
       n = (double)point_to_adj_faces[F(i, j)].size()
-      ver1 = (avg_F + 2 * avg_edge + (n - 3) * old) / n
+      ver1 = (avg_F + 2.0 * avg_edge + (n - 3) * old) / n
 
       //vertex 2
       Eigen::RowVector3d ver2;
@@ -125,6 +125,11 @@ void catmull_clark(
       key = std::to_string(F(i, (j + 3) % F.cols())) + "-" + std::to_string(F(i, j));
       ver4 = edge_point[key];
 
+      //construct new sv and sf
+      SV.resize(0, 3);
+      SF.resize(0, 4);
+      Eigen::RowVector4i index(-1, -1, -1, -1);
+      
     }
   }
 
