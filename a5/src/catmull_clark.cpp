@@ -128,13 +128,30 @@ void catmull_clark(
       //construct new sv and sf
       SV.resize(0, 3);
       SF.resize(0, 4);
-      Eigen::RowVector4i index(-1, -1, -1, -1);
-      
+      Eigen::RowVector4i face_index(-1, -1, -1, -1);
+      Eigen::RowVector3d l[4] = {ver1, ver2, ver3, ver4};
+      for (int m = 0; m < 4; m++){
+        for (int k = 0; k < SV.rows(); k++){
+          if (l[m].array() == SV.row(k).array()){
+            face_index(m) = k;
+          }
+        }
+        if (face_index(m) == -1){
+          SV.conservativeResize(SV.rows() + 1, NoChange);
+          SV.row(SV.rows() - 1) = l[m];
+          face_index(m) = SV.rows() - 1;
+        }
+      }
+      SF.conservativeResize(SF.rows() + 1, NoChange);
+      SF.row(SF.rows() - 1) = face_index;
+
+      //recursive call
+      Eigen::MatrixXd new_V;
+      Eigen::MatrixXi new_F;
+      new_V = SV.replicate(SV.rows(), SV.cols());
+      new_F = SF.replicate(SF.rows(), SF.cols());
+      catmull_clark(new_V, new_F, num_iters - 1, SV, SF);
     }
   }
-
-  
-  SV = V;
-  SF = F;
   ////////////////////////////////////////////////////////////////////////////
 }
