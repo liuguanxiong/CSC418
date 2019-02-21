@@ -106,7 +106,7 @@ void catmull_clark(
       }
       avg_edge /= (double)point_to_neighbors[F(i, j)].size();
 
-      double n = (double)point_to_adj_faces[F(i, j)].size();
+      double n = point_to_adj_faces[F(i, j)].size();
       ver1 = (avg_F + 2.0 * avg_edge + (n - 3) * old) / n;
 
       //vertex 2
@@ -145,14 +145,13 @@ void catmull_clark(
       }
       SF.conservativeResize(SF.rows() + 1, Eigen::NoChange);
       SF.row(SF.rows() - 1) = face_index;
-
-      //recursive call
-      Eigen::MatrixXd new_V;
-      Eigen::MatrixXi new_F;
-      new_V = SV.replicate(SV.rows(), SV.cols());
-      new_F = SF.replicate(SF.rows(), SF.cols());
-      catmull_clark(new_V, new_F, num_iters - 1, SV, SF);
     }
   }
+  //recursive call
+  Eigen::MatrixXd new_V;
+  Eigen::MatrixXi new_F;
+  new_V = SV.replicate(SV.rows(), SV.cols());
+  new_F = SF.replicate(SF.rows(), SF.cols());
+  catmull_clark(new_V, new_F, num_iters - 1, SV, SF);
   ////////////////////////////////////////////////////////////////////////////
 }
