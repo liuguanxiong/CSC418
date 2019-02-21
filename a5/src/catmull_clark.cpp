@@ -106,8 +106,8 @@ void catmull_clark(
       }
       avg_edge /= (double)point_to_neighbors[F(i, j)].size();
 
-      n = (double)point_to_adj_faces[F(i, j)].size()
-      ver1 = (avg_F + 2.0 * avg_edge + (n - 3) * old) / n
+      double n = (double)point_to_adj_faces[F(i, j)].size();
+      ver1 = (avg_F + 2.0 * avg_edge + (n - 3) * old) / n;
 
       //vertex 2
       Eigen::RowVector3d ver2;
@@ -121,7 +121,6 @@ void catmull_clark(
 
       //vertex 4
       Eigen::RowVector3d ver4;
-      std::string key;
       key = std::to_string(F(i, (j + 3) % F.cols())) + "-" + std::to_string(F(i, j));
       ver4 = edge_point[key];
 
@@ -129,20 +128,22 @@ void catmull_clark(
       SV.resize(0, 3);
       SF.resize(0, 4);
       Eigen::RowVector4i face_index(-1, -1, -1, -1);
-      Eigen::RowVector3d l[4] = {ver1, ver2, ver3, ver4};
-      for (int m = 0; m < 4; m++){
+      std::list<Eigen::RowVector3d> l = {ver1, ver2, ver3, ver4};
+      int counter = 0;
+      for (auto vertex : l ){
         for (int k = 0; k < SV.rows(); k++){
-          if (l[m].array() == SV.row(k).array()){
-            face_index(m) = k;
+          if (vertex.isApprox(SV.row(k))){
+            face_index(counter) = k;
           }
         }
-        if (face_index(m) == -1){
-          SV.conservativeResize(SV.rows() + 1, NoChange);
-          SV.row(SV.rows() - 1) = l[m];
-          face_index(m) = SV.rows() - 1;
+        if (face_index(counter) == -1){
+          SV.conservativeResize(SV.rows() + 1, Eigen::NoChange);
+          SV.row(SV.rows() - 1) = vertex;
+          face_index(counter) = SV.rows() - 1;
         }
+        counter++;
       }
-      SF.conservativeResize(SF.rows() + 1, NoChange);
+      SF.conservativeResize(SF.rows() + 1, Eigen::NoChange);
       SF.row(SF.rows() - 1) = face_index;
 
       //recursive call

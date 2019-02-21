@@ -32,14 +32,13 @@ bool write_obj(
       file << "vn " << NV(i, 0) << " " << NV(i, 1) << " " << NV(i, 2) << "\n";
     }
 
-    file << "f ";
     for (int i = 0; i < F.rows(); i++){
+      file << "f ";
       for (int j = 0; j < F.cols(); j++){
         file << F(i, j) + 1 << "/" << UF(i, j) + 1 << "/" << NF(i, j) + 1 << " ";
       }
+      file << "\n";
     }
-    file << "\n";
-    file.close();
     return true;
     
   } catch (const char *err) {
@@ -48,5 +47,4 @@ bool write_obj(
     return false;
   }
   ////////////////////////////////////////////////////////////////////////////
-  return false;
 }

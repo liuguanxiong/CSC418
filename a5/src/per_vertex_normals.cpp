@@ -1,5 +1,7 @@
 #include "per_vertex_normals.h"
 #include "triangle_area_normal.h"
+#include <unordered_map>
+#include <list>
 
 void per_vertex_normals(
   const Eigen::MatrixXd & V,
