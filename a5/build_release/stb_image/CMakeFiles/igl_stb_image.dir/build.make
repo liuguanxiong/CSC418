@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.13.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/guanxiongliu/Desktop/CSC418/a5
+CMAKE_SOURCE_DIR = /Users/guanxiongliu/Documents/CSC418/a5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/guanxiongliu/Desktop/CSC418/a5/build_release
+CMAKE_BINARY_DIR = /Users/guanxiongliu/Documents/CSC418/a5/build_release
 
 # Include any dependencies generated for this target.
 include stb_image/CMakeFiles/igl_stb_image.dir/depend.make
@@ -59,16 +59,16 @@ include stb_image/CMakeFiles/igl_stb_image.dir/flags.make
 
 stb_image/CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.o: stb_image/CMakeFiles/igl_stb_image.dir/flags.make
 stb_image/CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.o: ../libigl/external/stb/igl_stb_image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object stb_image/CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.o"
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release/stb_image && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.o -c /Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/stb/igl_stb_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object stb_image/CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.o"
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release/stb_image && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.o -c /Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/igl_stb_image.cpp
 
 stb_image/CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.i"
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release/stb_image && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/stb/igl_stb_image.cpp > CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.i
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release/stb_image && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/igl_stb_image.cpp > CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.i
 
 stb_image/CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.s"
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release/stb_image && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/stb/igl_stb_image.cpp -o CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.s
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release/stb_image && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/igl_stb_image.cpp -o CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.s
 
 # Object files for target igl_stb_image
 igl_stb_image_OBJECTS = \
@@ -80,9 +80,9 @@ igl_stb_image_EXTERNAL_OBJECTS =
 stb_image/libigl_stb_image.a: stb_image/CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.o
 stb_image/libigl_stb_image.a: stb_image/CMakeFiles/igl_stb_image.dir/build.make
 stb_image/libigl_stb_image.a: stb_image/CMakeFiles/igl_stb_image.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libigl_stb_image.a"
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release/stb_image && $(CMAKE_COMMAND) -P CMakeFiles/igl_stb_image.dir/cmake_clean_target.cmake
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release/stb_image && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/igl_stb_image.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libigl_stb_image.a"
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release/stb_image && $(CMAKE_COMMAND) -P CMakeFiles/igl_stb_image.dir/cmake_clean_target.cmake
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release/stb_image && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/igl_stb_image.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 stb_image/CMakeFiles/igl_stb_image.dir/build: stb_image/libigl_stb_image.a
@@ -90,10 +90,10 @@ stb_image/CMakeFiles/igl_stb_image.dir/build: stb_image/libigl_stb_image.a
 .PHONY : stb_image/CMakeFiles/igl_stb_image.dir/build
 
 stb_image/CMakeFiles/igl_stb_image.dir/clean:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release/stb_image && $(CMAKE_COMMAND) -P CMakeFiles/igl_stb_image.dir/cmake_clean.cmake
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release/stb_image && $(CMAKE_COMMAND) -P CMakeFiles/igl_stb_image.dir/cmake_clean.cmake
 .PHONY : stb_image/CMakeFiles/igl_stb_image.dir/clean
 
 stb_image/CMakeFiles/igl_stb_image.dir/depend:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/guanxiongliu/Desktop/CSC418/a5 /Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/stb /Users/guanxiongliu/Desktop/CSC418/a5/build_release /Users/guanxiongliu/Desktop/CSC418/a5/build_release/stb_image /Users/guanxiongliu/Desktop/CSC418/a5/build_release/stb_image/CMakeFiles/igl_stb_image.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/guanxiongliu/Documents/CSC418/a5 /Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb /Users/guanxiongliu/Documents/CSC418/a5/build_release /Users/guanxiongliu/Documents/CSC418/a5/build_release/stb_image /Users/guanxiongliu/Documents/CSC418/a5/build_release/stb_image/CMakeFiles/igl_stb_image.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : stb_image/CMakeFiles/igl_stb_image.dir/depend
 

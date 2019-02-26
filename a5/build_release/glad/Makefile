@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.13.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/guanxiongliu/Desktop/CSC418/a5
+CMAKE_SOURCE_DIR = /Users/guanxiongliu/Documents/CSC418/a5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/guanxiongliu/Desktop/CSC418/a5/build_release
+CMAKE_BINARY_DIR = /Users/guanxiongliu/Documents/CSC418/a5/build_release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(CMAKE_COMMAND) -E cmake_progress_start /Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles /Users/guanxiongliu/Desktop/CSC418/a5/build_release/glad/CMakeFiles/progress.marks
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(MAKE) -f CMakeFiles/Makefile2 glad/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles 0
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(CMAKE_COMMAND) -E cmake_progress_start /Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles /Users/guanxiongliu/Documents/CSC418/a5/build_release/glad/CMakeFiles/progress.marks
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(MAKE) -f CMakeFiles/Makefile2 glad/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(MAKE) -f CMakeFiles/Makefile2 glad/clean
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(MAKE) -f CMakeFiles/Makefile2 glad/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(MAKE) -f CMakeFiles/Makefile2 glad/preinstall
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(MAKE) -f CMakeFiles/Makefile2 glad/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(MAKE) -f CMakeFiles/Makefile2 glad/preinstall
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(MAKE) -f CMakeFiles/Makefile2 glad/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 glad/CMakeFiles/glad.dir/rule:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(MAKE) -f CMakeFiles/Makefile2 glad/CMakeFiles/glad.dir/rule
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(MAKE) -f CMakeFiles/Makefile2 glad/CMakeFiles/glad.dir/rule
 .PHONY : glad/CMakeFiles/glad.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ glad: glad/CMakeFiles/glad.dir/rule
 
 # fast build rule for target.
 glad/fast:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(MAKE) -f glad/CMakeFiles/glad.dir/build.make glad/CMakeFiles/glad.dir/build
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(MAKE) -f glad/CMakeFiles/glad.dir/build.make glad/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
 src/glad.o: src/glad.c.o
@@ -131,7 +131,7 @@ src/glad.o: src/glad.c.o
 
 # target to build an object file
 src/glad.c.o:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(MAKE) -f glad/CMakeFiles/glad.dir/build.make glad/CMakeFiles/glad.dir/src/glad.c.o
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(MAKE) -f glad/CMakeFiles/glad.dir/build.make glad/CMakeFiles/glad.dir/src/glad.c.o
 .PHONY : src/glad.c.o
 
 src/glad.i: src/glad.c.i
@@ -140,7 +140,7 @@ src/glad.i: src/glad.c.i
 
 # target to preprocess a source file
 src/glad.c.i:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(MAKE) -f glad/CMakeFiles/glad.dir/build.make glad/CMakeFiles/glad.dir/src/glad.c.i
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(MAKE) -f glad/CMakeFiles/glad.dir/build.make glad/CMakeFiles/glad.dir/src/glad.c.i
 .PHONY : src/glad.c.i
 
 src/glad.s: src/glad.c.s
@@ -149,7 +149,7 @@ src/glad.s: src/glad.c.s
 
 # target to generate assembly for a file
 src/glad.c.s:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(MAKE) -f glad/CMakeFiles/glad.dir/build.make glad/CMakeFiles/glad.dir/src/glad.c.s
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(MAKE) -f glad/CMakeFiles/glad.dir/build.make glad/CMakeFiles/glad.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

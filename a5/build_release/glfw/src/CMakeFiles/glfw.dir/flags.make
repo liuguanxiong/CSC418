@@ -6,7 +6,7 @@ C_FLAGS =  -fPIC -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Develop
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/glfw/include -I/Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/glfw/src -I/Users/guanxiongliu/Desktop/CSC418/a5/build_release/glfw/src 
+C_INCLUDES = -I/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/glfw/include -I/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/glfw/src -I/Users/guanxiongliu/Documents/CSC418/a5/build_release/glfw/src 
 
 # Custom flags: glfw/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

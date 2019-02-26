@@ -570,17 +570,21 @@ unistd.h
 
 ../libigl/cmake/../external/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
-/Users/guanxiongliu/Desktop/CSC418/a5/src/catmull_clark.cpp
+/Users/guanxiongliu/Documents/CSC418/a5/src/catmull_clark.cpp
 catmull_clark.h
-/Users/guanxiongliu/Desktop/CSC418/a5/src/catmull_clark.h
+/Users/guanxiongliu/Documents/CSC418/a5/src/catmull_clark.h
 unordered_map
 -
 utility
 -
 functional
 -
-list
+vector
 -
 string
+-
+algorithm
+-
+iostream
 -
 

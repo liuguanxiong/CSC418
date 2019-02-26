@@ -6,5 +6,5 @@ CXX_FLAGS =  -fPIC -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Devel
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/stb -I/Users/guanxiongliu/Desktop/CSC418/a5/build_release/stb_image 
+CXX_INCLUDES = -I/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb -I/Users/guanxiongliu/Documents/CSC418/a5/build_release/stb_image 
 

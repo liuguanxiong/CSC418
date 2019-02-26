@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/stb/igl_stb_image.cpp" "/Users/guanxiongliu/Desktop/CSC418/a5/build_release/stb_image/CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.o"
+  "/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/igl_stb_image.cpp" "/Users/guanxiongliu/Documents/CSC418/a5/build_release/stb_image/CMakeFiles/igl_stb_image.dir/igl_stb_image.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

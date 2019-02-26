@@ -1,4 +1,4 @@
-# Install script for directory: /Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/glfw
+# Install script for directory: /Users/guanxiongliu/Documents/CSC418/a5/libigl/external/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/guanxiongliu/Desktop/CSC418/a5/build_release/glfw/src/cmake_install.cmake")
+  include("/Users/guanxiongliu/Documents/CSC418/a5/build_release/glfw/src/cmake_install.cmake")
 
 endif()
 

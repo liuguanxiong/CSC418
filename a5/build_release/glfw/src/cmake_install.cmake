@@ -1,4 +1,4 @@
-# Install script for directory: /Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/glfw/src
+# Install script for directory: /Users/guanxiongliu/Documents/CSC418/a5/libigl/external/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

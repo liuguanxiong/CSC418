@@ -6,5 +6,5 @@ CXX_FLAGS =  -fPIC -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Devel
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/guanxiongliu/Desktop/CSC418/a5/include -I/Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/glad/include -I/Users/guanxiongliu/Desktop/CSC418/a5/libigl/external/glfw/include -isystem /Users/guanxiongliu/Desktop/CSC418/a5/libigl/cmake/../include -isystem /Users/guanxiongliu/Desktop/CSC418/a5/libigl/cmake/../external/eigen -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks 
+CXX_INCLUDES = -I/Users/guanxiongliu/Documents/CSC418/a5/include -I/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/glad/include -I/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/glfw/include -isystem /Users/guanxiongliu/Documents/CSC418/a5/libigl/cmake/../include -isystem /Users/guanxiongliu/Documents/CSC418/a5/libigl/cmake/../external/eigen -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks 
 

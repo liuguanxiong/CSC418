@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.13.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/guanxiongliu/Desktop/CSC418/a5
+CMAKE_SOURCE_DIR = /Users/guanxiongliu/Documents/CSC418/a5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/guanxiongliu/Desktop/CSC418/a5/build_release
+CMAKE_BINARY_DIR = /Users/guanxiongliu/Documents/CSC418/a5/build_release
 
 # Include any dependencies generated for this target.
 include CMakeFiles/core.dir/depend.make
@@ -59,120 +59,120 @@ include CMakeFiles/core.dir/flags.make
 
 CMakeFiles/core.dir/src/catmull_clark.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/catmull_clark.cpp.o: ../src/catmull_clark.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/core.dir/src/catmull_clark.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/catmull_clark.cpp.o -c /Users/guanxiongliu/Desktop/CSC418/a5/src/catmull_clark.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/core.dir/src/catmull_clark.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/catmull_clark.cpp.o -c /Users/guanxiongliu/Documents/CSC418/a5/src/catmull_clark.cpp
 
 CMakeFiles/core.dir/src/catmull_clark.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/src/catmull_clark.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Desktop/CSC418/a5/src/catmull_clark.cpp > CMakeFiles/core.dir/src/catmull_clark.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Documents/CSC418/a5/src/catmull_clark.cpp > CMakeFiles/core.dir/src/catmull_clark.cpp.i
 
 CMakeFiles/core.dir/src/catmull_clark.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/catmull_clark.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Desktop/CSC418/a5/src/catmull_clark.cpp -o CMakeFiles/core.dir/src/catmull_clark.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Documents/CSC418/a5/src/catmull_clark.cpp -o CMakeFiles/core.dir/src/catmull_clark.cpp.s
 
 CMakeFiles/core.dir/src/cube.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/cube.cpp.o: ../src/cube.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/core.dir/src/cube.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/cube.cpp.o -c /Users/guanxiongliu/Desktop/CSC418/a5/src/cube.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/core.dir/src/cube.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/cube.cpp.o -c /Users/guanxiongliu/Documents/CSC418/a5/src/cube.cpp
 
 CMakeFiles/core.dir/src/cube.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/src/cube.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Desktop/CSC418/a5/src/cube.cpp > CMakeFiles/core.dir/src/cube.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Documents/CSC418/a5/src/cube.cpp > CMakeFiles/core.dir/src/cube.cpp.i
 
 CMakeFiles/core.dir/src/cube.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/cube.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Desktop/CSC418/a5/src/cube.cpp -o CMakeFiles/core.dir/src/cube.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Documents/CSC418/a5/src/cube.cpp -o CMakeFiles/core.dir/src/cube.cpp.s
 
 CMakeFiles/core.dir/src/per_corner_normals.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/per_corner_normals.cpp.o: ../src/per_corner_normals.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/core.dir/src/per_corner_normals.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/per_corner_normals.cpp.o -c /Users/guanxiongliu/Desktop/CSC418/a5/src/per_corner_normals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/core.dir/src/per_corner_normals.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/per_corner_normals.cpp.o -c /Users/guanxiongliu/Documents/CSC418/a5/src/per_corner_normals.cpp
 
 CMakeFiles/core.dir/src/per_corner_normals.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/src/per_corner_normals.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Desktop/CSC418/a5/src/per_corner_normals.cpp > CMakeFiles/core.dir/src/per_corner_normals.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Documents/CSC418/a5/src/per_corner_normals.cpp > CMakeFiles/core.dir/src/per_corner_normals.cpp.i
 
 CMakeFiles/core.dir/src/per_corner_normals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/per_corner_normals.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Desktop/CSC418/a5/src/per_corner_normals.cpp -o CMakeFiles/core.dir/src/per_corner_normals.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Documents/CSC418/a5/src/per_corner_normals.cpp -o CMakeFiles/core.dir/src/per_corner_normals.cpp.s
 
 CMakeFiles/core.dir/src/per_face_normals.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/per_face_normals.cpp.o: ../src/per_face_normals.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/core.dir/src/per_face_normals.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/per_face_normals.cpp.o -c /Users/guanxiongliu/Desktop/CSC418/a5/src/per_face_normals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/core.dir/src/per_face_normals.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/per_face_normals.cpp.o -c /Users/guanxiongliu/Documents/CSC418/a5/src/per_face_normals.cpp
 
 CMakeFiles/core.dir/src/per_face_normals.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/src/per_face_normals.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Desktop/CSC418/a5/src/per_face_normals.cpp > CMakeFiles/core.dir/src/per_face_normals.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Documents/CSC418/a5/src/per_face_normals.cpp > CMakeFiles/core.dir/src/per_face_normals.cpp.i
 
 CMakeFiles/core.dir/src/per_face_normals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/per_face_normals.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Desktop/CSC418/a5/src/per_face_normals.cpp -o CMakeFiles/core.dir/src/per_face_normals.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Documents/CSC418/a5/src/per_face_normals.cpp -o CMakeFiles/core.dir/src/per_face_normals.cpp.s
 
 CMakeFiles/core.dir/src/per_vertex_normals.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/per_vertex_normals.cpp.o: ../src/per_vertex_normals.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/core.dir/src/per_vertex_normals.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/per_vertex_normals.cpp.o -c /Users/guanxiongliu/Desktop/CSC418/a5/src/per_vertex_normals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/core.dir/src/per_vertex_normals.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/per_vertex_normals.cpp.o -c /Users/guanxiongliu/Documents/CSC418/a5/src/per_vertex_normals.cpp
 
 CMakeFiles/core.dir/src/per_vertex_normals.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/src/per_vertex_normals.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Desktop/CSC418/a5/src/per_vertex_normals.cpp > CMakeFiles/core.dir/src/per_vertex_normals.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Documents/CSC418/a5/src/per_vertex_normals.cpp > CMakeFiles/core.dir/src/per_vertex_normals.cpp.i
 
 CMakeFiles/core.dir/src/per_vertex_normals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/per_vertex_normals.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Desktop/CSC418/a5/src/per_vertex_normals.cpp -o CMakeFiles/core.dir/src/per_vertex_normals.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Documents/CSC418/a5/src/per_vertex_normals.cpp -o CMakeFiles/core.dir/src/per_vertex_normals.cpp.s
 
 CMakeFiles/core.dir/src/sphere.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/sphere.cpp.o: ../src/sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/core.dir/src/sphere.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/sphere.cpp.o -c /Users/guanxiongliu/Desktop/CSC418/a5/src/sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/core.dir/src/sphere.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/sphere.cpp.o -c /Users/guanxiongliu/Documents/CSC418/a5/src/sphere.cpp
 
 CMakeFiles/core.dir/src/sphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/src/sphere.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Desktop/CSC418/a5/src/sphere.cpp > CMakeFiles/core.dir/src/sphere.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Documents/CSC418/a5/src/sphere.cpp > CMakeFiles/core.dir/src/sphere.cpp.i
 
 CMakeFiles/core.dir/src/sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/sphere.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Desktop/CSC418/a5/src/sphere.cpp -o CMakeFiles/core.dir/src/sphere.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Documents/CSC418/a5/src/sphere.cpp -o CMakeFiles/core.dir/src/sphere.cpp.s
 
 CMakeFiles/core.dir/src/triangle_area_normal.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/triangle_area_normal.cpp.o: ../src/triangle_area_normal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/core.dir/src/triangle_area_normal.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/triangle_area_normal.cpp.o -c /Users/guanxiongliu/Desktop/CSC418/a5/src/triangle_area_normal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/core.dir/src/triangle_area_normal.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/triangle_area_normal.cpp.o -c /Users/guanxiongliu/Documents/CSC418/a5/src/triangle_area_normal.cpp
 
 CMakeFiles/core.dir/src/triangle_area_normal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/src/triangle_area_normal.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Desktop/CSC418/a5/src/triangle_area_normal.cpp > CMakeFiles/core.dir/src/triangle_area_normal.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Documents/CSC418/a5/src/triangle_area_normal.cpp > CMakeFiles/core.dir/src/triangle_area_normal.cpp.i
 
 CMakeFiles/core.dir/src/triangle_area_normal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/triangle_area_normal.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Desktop/CSC418/a5/src/triangle_area_normal.cpp -o CMakeFiles/core.dir/src/triangle_area_normal.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Documents/CSC418/a5/src/triangle_area_normal.cpp -o CMakeFiles/core.dir/src/triangle_area_normal.cpp.s
 
 CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.o: ../src/vertex_triangle_adjacency.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.o -c /Users/guanxiongliu/Desktop/CSC418/a5/src/vertex_triangle_adjacency.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.o -c /Users/guanxiongliu/Documents/CSC418/a5/src/vertex_triangle_adjacency.cpp
 
 CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Desktop/CSC418/a5/src/vertex_triangle_adjacency.cpp > CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Documents/CSC418/a5/src/vertex_triangle_adjacency.cpp > CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.i
 
 CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Desktop/CSC418/a5/src/vertex_triangle_adjacency.cpp -o CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Documents/CSC418/a5/src/vertex_triangle_adjacency.cpp -o CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.s
 
 CMakeFiles/core.dir/src/write_obj.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/write_obj.cpp.o: ../src/write_obj.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/core.dir/src/write_obj.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/write_obj.cpp.o -c /Users/guanxiongliu/Desktop/CSC418/a5/src/write_obj.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/core.dir/src/write_obj.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/src/write_obj.cpp.o -c /Users/guanxiongliu/Documents/CSC418/a5/src/write_obj.cpp
 
 CMakeFiles/core.dir/src/write_obj.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/src/write_obj.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Desktop/CSC418/a5/src/write_obj.cpp > CMakeFiles/core.dir/src/write_obj.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guanxiongliu/Documents/CSC418/a5/src/write_obj.cpp > CMakeFiles/core.dir/src/write_obj.cpp.i
 
 CMakeFiles/core.dir/src/write_obj.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/write_obj.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Desktop/CSC418/a5/src/write_obj.cpp -o CMakeFiles/core.dir/src/write_obj.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guanxiongliu/Documents/CSC418/a5/src/write_obj.cpp -o CMakeFiles/core.dir/src/write_obj.cpp.s
 
 # Object files for target core
 core_OBJECTS = \
@@ -200,7 +200,7 @@ libcore.a: CMakeFiles/core.dir/src/vertex_triangle_adjacency.cpp.o
 libcore.a: CMakeFiles/core.dir/src/write_obj.cpp.o
 libcore.a: CMakeFiles/core.dir/build.make
 libcore.a: CMakeFiles/core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libcore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core.dir/link.txt --verbose=$(VERBOSE)
 
@@ -214,6 +214,6 @@ CMakeFiles/core.dir/clean:
 .PHONY : CMakeFiles/core.dir/clean
 
 CMakeFiles/core.dir/depend:
-	cd /Users/guanxiongliu/Desktop/CSC418/a5/build_release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/guanxiongliu/Desktop/CSC418/a5 /Users/guanxiongliu/Desktop/CSC418/a5 /Users/guanxiongliu/Desktop/CSC418/a5/build_release /Users/guanxiongliu/Desktop/CSC418/a5/build_release /Users/guanxiongliu/Desktop/CSC418/a5/build_release/CMakeFiles/core.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/guanxiongliu/Documents/CSC418/a5/build_release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/guanxiongliu/Documents/CSC418/a5 /Users/guanxiongliu/Documents/CSC418/a5 /Users/guanxiongliu/Documents/CSC418/a5/build_release /Users/guanxiongliu/Documents/CSC418/a5/build_release /Users/guanxiongliu/Documents/CSC418/a5/build_release/CMakeFiles/core.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/core.dir/depend
 
