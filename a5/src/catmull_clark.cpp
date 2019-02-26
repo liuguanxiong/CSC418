@@ -38,6 +38,7 @@ void catmull_clark(
     return;
   }
 
+  //prepare dictionary for faster accessing
   std::unordered_map<int, Eigen::RowVector3d> face_point;
   std::unordered_map<int, std::vector<int>> point_to_adj_faces;
   std::unordered_map<std::string, std::vector<int>> edge_to_adj_faces;
@@ -82,6 +83,7 @@ void catmull_clark(
     face_point[i] = accumulator / 4.0;
   }
 
+  //clear sv and sf for new mesh
   SV.resize(0, 3);
   SF.resize(0, 4);
   for (int i = 0; i < F.rows(); i++){
