@@ -2668,17 +2668,17 @@ vulkan/vulkan.h
 igl_stb_image_export.h
 -
 
-/Users/guanxiongliu/Documents/CSC418/a5/obj.cpp
+/home/guanxiong/Desktop/CSC418/a5/obj.cpp
 cube.h
-/Users/guanxiongliu/Documents/CSC418/a5/cube.h
+/home/guanxiong/Desktop/CSC418/a5/cube.h
 sphere.h
-/Users/guanxiongliu/Documents/CSC418/a5/sphere.h
+/home/guanxiong/Desktop/CSC418/a5/sphere.h
 write_obj.h
-/Users/guanxiongliu/Documents/CSC418/a5/write_obj.h
+/home/guanxiong/Desktop/CSC418/a5/write_obj.h
 QuadViewer.h
-/Users/guanxiongliu/Documents/CSC418/a5/QuadViewer.h
+/home/guanxiong/Desktop/CSC418/a5/QuadViewer.h
 set_texture_from_png.h
-/Users/guanxiongliu/Documents/CSC418/a5/set_texture_from_png.h
+/home/guanxiong/Desktop/CSC418/a5/set_texture_from_png.h
 igl/readOBJ.h
 -
 Eigen/Core

@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/igl_stb_image.cpp
+/home/guanxiong/Desktop/CSC418/a5/libigl/external/stb/igl_stb_image.cpp
 igl_stb_image.h
-/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/igl_stb_image.h
+/home/guanxiong/Desktop/CSC418/a5/libigl/external/stb/igl_stb_image.h
 stb_image.h
-/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/stb_image.h
+/home/guanxiong/Desktop/CSC418/a5/libigl/external/stb/stb_image.h
 stb_image_write.h
-/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/stb_image_write.h
+/home/guanxiong/Desktop/CSC418/a5/libigl/external/stb/stb_image_write.h
 
-/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/igl_stb_image.h
+/home/guanxiong/Desktop/CSC418/a5/libigl/external/stb/igl_stb_image.h
 igl_stb_image_export.h
 -
 
-/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/stb_image.h
+/home/guanxiong/Desktop/CSC418/a5/libigl/external/stb/stb_image.h
 stb_image.h
-/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/stb_image.h
+/home/guanxiong/Desktop/CSC418/a5/libigl/external/stb/stb_image.h
 stdio.h
 -
 stdarg.h
@@ -46,7 +46,7 @@ intrin.h
 arm_neon.h
 -
 
-/Users/guanxiongliu/Documents/CSC418/a5/libigl/external/stb/stb_image_write.h
+/home/guanxiong/Desktop/CSC418/a5/libigl/external/stb/stb_image_write.h
 stdio.h
 -
 stdarg.h

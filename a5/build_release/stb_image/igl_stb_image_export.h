@@ -39,4 +39,4 @@
 #  endif
 #endif
 
-#endif /* IGL_STB_IMAGE_EXPORT_H */
+#endif

@@ -2624,11 +2624,11 @@ GL/glu.h
 vulkan/vulkan.h
 -
 
-/Users/guanxiongliu/Documents/CSC418/a5/quad_subdivision.cpp
+/home/guanxiong/Desktop/CSC418/a5/quad_subdivision.cpp
 catmull_clark.h
-/Users/guanxiongliu/Documents/CSC418/a5/catmull_clark.h
+/home/guanxiong/Desktop/CSC418/a5/catmull_clark.h
 QuadViewer.h
-/Users/guanxiongliu/Documents/CSC418/a5/QuadViewer.h
+/home/guanxiong/Desktop/CSC418/a5/QuadViewer.h
 igl/readOBJ.h
 -
 

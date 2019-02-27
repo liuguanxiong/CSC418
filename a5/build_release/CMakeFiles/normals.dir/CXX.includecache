@@ -2894,13 +2894,13 @@ GL/glu.h
 vulkan/vulkan.h
 -
 
-/Users/guanxiongliu/Documents/CSC418/a5/normals.cpp
+/home/guanxiong/Desktop/CSC418/a5/normals.cpp
 per_vertex_normals.h
-/Users/guanxiongliu/Documents/CSC418/a5/per_vertex_normals.h
+/home/guanxiong/Desktop/CSC418/a5/per_vertex_normals.h
 per_corner_normals.h
-/Users/guanxiongliu/Documents/CSC418/a5/per_corner_normals.h
+/home/guanxiong/Desktop/CSC418/a5/per_corner_normals.h
 per_face_normals.h
-/Users/guanxiongliu/Documents/CSC418/a5/per_face_normals.h
+/home/guanxiong/Desktop/CSC418/a5/per_face_normals.h
 igl/read_triangle_mesh.h
 -
 igl/opengl/glfw/Viewer.h
