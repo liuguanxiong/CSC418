@@ -35,5 +35,6 @@ build/*
 *.DS_Store
 .vscode
 build
+build_release
 build-release
 .stackdump
