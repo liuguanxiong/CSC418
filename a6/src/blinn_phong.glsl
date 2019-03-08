@@ -22,7 +22,8 @@ vec3 blinn_phong(
 {
   /////////////////////////////////////////////////////////////////////////////
   // Replace with your code 
-  return vec3(1,1,1);
+  vec3 intensity = vec3(1, 1, 1);
+  return ka * intensity + kd * intensity * max(0, dot(n, l)) + ks * intensity * pow(max(0, dot(n, (v+l)/length(v+l))), p);
   /////////////////////////////////////////////////////////////////////////////
 }
 
