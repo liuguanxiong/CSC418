@@ -35,19 +35,19 @@ void main()
     n = -n;
   }
   vec3 normal = (transpose(inverse(view))*transpose(inverse(model))*vec4(n, 1.0)).xyz;
-  float clouds = sin(sphere_fs_in.y*12 + 20*improved_perlin_noise(sphere_fs_in));
 
-  float alpha = 0.15;
+  //cloud
+  float alpha = 10*sin(improved_perlin_noise(vec3(2.5*sphere_fs_in.y + sin(animation_seconds*M_PI/8),sphere_fs_in.y + sin(animation_seconds*M_PI/8), sphere_fs_in.z + cos(animation_seconds*M_PI/4))*M_PI/2.0));
 
   if (is_moon){
-    color = blinn_phong(vec3(0.05, 0.05, 0.05),vec3(0.5, 0.5, 0.5),vec3(1, 1, 1),1500,normalize(normal),normalize(-vp),normalize(point_light_3d-vp));
+    color = blinn_phong(vec3(0.05, 0.05, 0.05),vec3(0.5, 0.5, 0.5),vec3(1, 1, 1),500,normalize(normal),normalize(-vp),normalize(point_light_3d-vp));
   }
   else{
     if (bump_height(is_moon, sphere_fs_in)<0.1){
-      color = blinn_phong(vec3(0.05, 0.05, 0.05),vec3(0.2, 0.2, 0.8)*(1-alpha)+alpha*vec3(1,1,1)*clouds,vec3(1, 1, 1),1500,normalize(normal),normalize(-vp),normalize(point_light_3d-vp));
+      color = blinn_phong(vec3(0.05, 0.05, 0.05),vec3(0.2, 0.2, 0.8)*(1-alpha)+alpha*vec3(1,1,1),vec3(1, 1, 1),500,normalize(normal),normalize(-vp),normalize(point_light_3d-vp));
     }
     else{
-      color = blinn_phong(vec3(0.05, 0.05, 0.05),vec3(0.2, 0.7, 0.1)*(1-alpha)+alpha*vec3(1,1,1)*clouds,vec3(1, 1, 1),1500,normalize(normal),normalize(-vp),normalize(point_light_3d-vp));
+      color = blinn_phong(vec3(0.05, 0.05, 0.05),vec3(0.2, 0.7, 0.1)*(1-alpha)+alpha*vec3(1,1,1),vec3(1, 1, 1),500,normalize(normal),normalize(-vp),normalize(point_light_3d-vp));
     }
   }
   /////////////////////////////////////////////////////////////////////////////
