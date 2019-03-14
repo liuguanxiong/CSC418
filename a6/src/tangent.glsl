@@ -7,7 +7,16 @@ void tangent(in vec3 N, out vec3 T, out vec3 B)
 {
   /////////////////////////////////////////////////////////////////////////////
   // Replace with your code 
-  T = vec3(1,0,0);
-  B = vec3(0,1,0);
+  vec3 t1 = cross(N, vec3(0.0, 0.0, 1.0));
+  vec3 t2 = cross(N, vec3(0.0, 1.0, 0.0));
+  vec3 t;
+  if (length(t1) > length(t2)){
+    t = t1;
+  }
+  else{
+    t = t2;
+  }
+  T = normalize(t);
+  B = normalize(cross(N, t));
   /////////////////////////////////////////////////////////////////////////////
 }

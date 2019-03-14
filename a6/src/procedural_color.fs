@@ -19,6 +19,18 @@ void main()
 {
   /////////////////////////////////////////////////////////////////////////////
   // Replace with your code 
-  color = vec3(1,1,1);
+  float theta = M_PI / 2.0 * animation_seconds;
+  vec4 point_light = view * vec4(4 * cos(theta), 2, 4 * sin(theta), 1);
+  vec3 point_light_3d = point_light.xyz / point_light.w;
+  vec3 vp = view_pos_fs_in.xyz / view_pos_fs_in.w;
+
+  float noise = abs(sin((10 * perlin_noise(sphere_fs_in)) * M_PI));
+  
+  if (is_moon){
+    color = blinn_phong(vec3(0.05, 0.05, 0.05),vec3(0.5, 0.5, 0.5) * noise,vec3(1, 1, 1),1500,normalize(normal_fs_in),normalize(-vp),normalize(point_light_3d-vp));
+  }
+  else{
+    color = blinn_phong(vec3(0.05, 0.05, 0.05),vec3(0.2, 0.2, 0.8) * noise,vec3(1, 1, 1),1500,normalize(normal_fs_in),normalize(-vp),normalize(point_light_3d-vp));
+  }
   /////////////////////////////////////////////////////////////////////////////
 }
