@@ -30,7 +30,7 @@ void main()
   tangent(normalize(sphere_fs_in), T, B);
   mat4 model = model(is_moon, animation_seconds);
   vec3 b_sphere_fs_in = bump_position(is_moon, sphere_fs_in);
-  vec3 n = normalize(cross(bump_position(is_moon, sphere_fs_in - T/10000.0) - b_sphere_fs_in, bump_position(is_moon, sphere_fs_in - B/10000.0) - b_sphere_fs_in));
+  vec3 n = normalize(cross((bump_position(is_moon, sphere_fs_in + T*0.0001) - b_sphere_fs_in)/0.0001, (bump_position(is_moon, sphere_fs_in + B*0.0001) - b_sphere_fs_in)/0.0001));
   if (dot(sphere_fs_in, n) < 0){
     n = -n;
   }
