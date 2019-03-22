@@ -13,8 +13,10 @@ Eigen::Vector3d catmull_rom_interpolation(
   //circulating keyframes
   t = fmod(t, keyframes.back().first);
 
+  int i = 0;
+
   //find closest four points
-  for (int i = 0; i < keyframes.size(); i++){
+  for (i = 0; i < keyframes.size(); i++){
     if (keyframes[i].first > t){
       break;
     }

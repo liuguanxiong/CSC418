@@ -10,6 +10,15 @@ double line_search(
 {
   /////////////////////////////////////////////////////////////////////////////
   // Replace with your code
-  return 0;
+  double sigma = 10000.0;
+  Eigen::VectorXd new_z = z - sigma * dz;
+  proj_z(new_z);
+
+  while (f(new_z) > f(z)) {
+    sigma /= 2.0;
+    new_z = z - sigma * dz;
+    proj_z(new_z);
+  }
+  return sigma;
   /////////////////////////////////////////////////////////////////////////////
 }

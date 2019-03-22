@@ -27,9 +27,25 @@ void end_effectors_objective_and_gradient(
 
   grad_f = [&](const Eigen::VectorXd & A)->Eigen::VectorXd
   {
-    return Eigen::VectorXd::Zero(A.size());
+    Eigen::MatrixXd J;
+    Skeleton cp_skeleton = copy_skeleton_at(skeleton, A);
+    kinematics_jacobian(cp_skeleton, b, J);
+    Eigen::VectorXd E_deriv = Eigen::VectorXd::Zero(3 * b.size());
+    Eigen::VectorXd transformed = transformed_tips(cp_skeleton, b);
+    double prev_E = f(A);
+    double dx = 1.0e-7;
+    for (int i = 0; i < E_deriv.size(); i++){
+      Eigen::VectorXd cp_transformed = transformed;
+      cp_transformed[i] += dx;
+      double result = 0.0;
+      for (int j = 0; j < b.size(); j++){
+        result += (Eigen::Vector3d(cp_transformed[3 * j], cp_transformed[3 * j + 1], cp_transformed[3 * j + 2]) - Eigen::Vector3d(xb0[3 * j], xb0[3 * j + 1], xb0[3 * j + 2])).squaredNorm();
+      }
+      E_deriv[i] = (result - prev_E)/dx;
+    }
+    return J.transpose() * E_deriv;
   };
-  
+
   proj_z = [&](Eigen::VectorXd & A)
   {
     for (int i = 0; i < skeleton.size(); i++) {
