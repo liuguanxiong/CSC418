@@ -10,7 +10,7 @@ double line_search(
 {
   /////////////////////////////////////////////////////////////////////////////
   // Replace with your code
-  double sigma = 10000.0;
+  double sigma = max_step;
   Eigen::VectorXd new_z = z - sigma * dz;
   proj_z(new_z);
 
