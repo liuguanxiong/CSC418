@@ -10,20 +10,19 @@ Eigen::Vector3d catmull_rom_interpolation(
   // Source: https://stackoverflow.com/questions/9489736/catmull-rom-curve-with-no-cusps-and-no-self-intersections/19283471#19283471
   // Replace with your code
 
+  if (keyframes.size() == 0) {
+  	return Eigen::Vector3d(0, 0, 0);
+  }
+  
   //circulating keyframes
   t = fmod(t, keyframes.back().first);
 
-  int i = 0;
-
+  int i;
   //find closest four points
   for (i = 0; i < keyframes.size(); i++){
     if (keyframes[i].first > t){
       break;
     }
-  }
-
-  if (i == 0){
-    return Eigen::Vector3d(0, 0, 0);
   }
 
   //cosine interpolation for extreme segments
@@ -39,6 +38,7 @@ Eigen::Vector3d catmull_rom_interpolation(
     double mu2 = (1 - cos(mu * M_PI))/2;
     return (P0 * (1 - mu2) + P1 * mu2);
   }
+
   Eigen::Vector3d P0, P1, P2, P3;
   P0 = keyframes[i-2].second;
   P1 = keyframes[i-1].second;
